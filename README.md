@@ -1,6 +1,8 @@
-# 薅薅乐
+# 简介
 
-**不要给我提什么适配青龙，青龙怎么拉取你的代码之类的issue, 一律直接close。**
+**[点击查看《提问的智慧》。](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)**
+
+**对于非常小白(google/baidu有答案)的issue, 一律直接close!**
 
 - python版本:3.7.*
 

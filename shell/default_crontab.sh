@@ -5,9 +5,9 @@ SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 # 定时更新脚本
-30 15 * * * /bin/docker-entrypoint >> /dev/null  2>&1
+40 4,23 * * * /bin/docker-entrypoint >> /dev/null  2>&1
 
-# 每2个小时检查一次cookies是否过期
+#  检查cookies是否过期, 过期则发送通知
 0 */2 * * * /scripts/check_cookies.py >> /scripts/logs/check_cookies_`date "+\%Y-\%m-\%d"`.log 2>&1
 
 #  京东到家 签到赚鲜豆
@@ -39,6 +39,12 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 #  省钱大赢家翻翻乐
 3 */1 * * * /scripts/jd_big_winner.py >> /scripts/logs/jd_big_winner_`date "+\%Y-\%m-\%d"`.log 2>&1
+
+#  来电好物季
+44 1,19 * * * /scripts/jd_call_goods.py >> /scripts/logs/jd_call_goods_`date "+\%Y-\%m-\%d"`.log 2>&1
+
+#  汽车生活节
+22 4,17 * * * /scripts/jd_car_live.py >> /scripts/logs/jd_car_live_`date "+\%Y-\%m-\%d"`.log 2>&1
 
 #  签到领现金
 46 */12 * * * /scripts/jd_cash.py >> /scripts/logs/jd_cash_`date "+\%Y-\%m-\%d"`.log 2>&1
@@ -94,6 +100,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #  幸运大转盘
 10 10,23 * * * /scripts/jd_lucky_turntable.py >> /scripts/logs/jd_lucky_turntable_`date "+\%Y-\%m-\%d"`.log 2>&1
 
+# 
+37 3,12 * * * /scripts/jd_magic.py >> /scripts/logs/jd_magic_`date "+\%Y-\%m-\%d"`.log 2>&1
+
 #  种豆得豆
 10 3,15 * * * /scripts/jd_planting_bean.py >> /scripts/logs/jd_planting_bean_`date "+\%Y-\%m-\%d"`.log 2>&1
 
@@ -111,6 +120,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 #  京东APP相关签到
 0 3,19 * * * /scripts/jd_sign.py >> /scripts/logs/jd_sign_`date "+\%Y-\%m-\%d"`.log 2>&1
+
+#  京东APP-每日特价-疯狂砸金蛋
+21 5,17 * * * /scripts/jd_smash_golden_egg.py >> /scripts/logs/jd_smash_golden_egg_`date "+\%Y-\%m-\%d"`.log 2>&1
 
 #  众筹许愿池,
 45 */12 * * * /scripts/jd_wishing_pool.py >> /scripts/logs/jd_wishing_pool_`date "+\%Y-\%m-\%d"`.log 2>&1
@@ -132,4 +144,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 #  京喜App->惊喜工厂
 38 7,12,18 * * * /scripts/jx_factory.py >> /scripts/logs/jx_factory_`date "+\%Y-\%m-\%d"`.log 2>&1
+
+#  京喜工厂收电量
+45 */1 * * * /scripts/jx_factory_collect.py >> /scripts/logs/jx_factory_collect_`date "+\%Y-\%m-\%d"`.log 2>&1
 

@@ -11,6 +11,10 @@ process_num: 4
 # 宠汪汪进程数
 joy_process_num: 1
 
+# 拼图签到进程数
+jd_puzzle_process_num: 1
+
+# 京东COOKIES
 jd_cookies:
   - pt_pin=;pt_key=;
 
@@ -28,6 +32,10 @@ notify:
   tg_user_id: null
   # push+ token: https://pushplus.hxtrip.com/
   push_p_token: null
+  # 依次填上corpid的值,corpsecret的值,touser的值,agentid,media_id的值，注意用,号隔开。
+  qywx_am: null
 
-# 是否开启京豆夺宝功能
-jd_bean_indiana: false
+# 在此列表中的脚本, 将不会加入到定时任务中, 如需立即生效, 请手动执行命令: docker-entrypoint
+crontab_exclude_scripts:
+  - jd_bean_indiana.py
+

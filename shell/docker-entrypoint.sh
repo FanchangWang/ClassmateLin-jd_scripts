@@ -52,6 +52,7 @@ chmod a+x /scripts/*.py
 
 echo "更新cron任务..."
 crontab -r
+python $CODE_DIR/tools/update_config.py;
 python $CODE_DIR/tools/update_default_crontab.py;
 cat $CODE_DIR/shell/default_crontab.sh > /tmp/crontab
 echo -e "\n" >> /tmp/crontab

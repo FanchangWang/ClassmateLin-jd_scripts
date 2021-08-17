@@ -41,7 +41,8 @@ class Config:
         'notify': '消息通知配置项, TG机器人通知需要宿主机有qiang。',
         'tg_bot_token': 'TG机器人TOKEN',
         'tg_user_id': 'TG机器人用户ID',
-        'push_p_token': 'Push+消息通知Token, https://pushplus.hxtrip.com/',
+        'push_plus_token': 'Push+消息通知Token, https://pushplus.hxtrip.com/',
+        'push_plus_group': 'Push+一对多通知组编号, 一对一不需要填',
         'qywx_am': '企业微信通知, 依次填上corpid的值,corpsecret的值,touser的值,agentid,media_id的值，注意用英文,号隔开。',
         'crontab_exclude_scripts': '在此列表中的脚本, 将不会加入到定时任务中, 如需立即生效, 请手动执行命令: docker-entrypoint',
         'jd_puzzle_process_num': '拼图签到默认进程数量',
@@ -66,12 +67,13 @@ class Config:
             if type(cv) == dict:
                 res[ck] = self.merge(cv, sample_conf.get(ck, dict()))
                 continue
+            if ck == 'push_p_token':
+                res['push_plus_token'] = cv
             if ck not in sample_conf:  # 示例配置文件已经取消的选项
                 continue
             res[ck] = cv
-
         for sk, sv in sample_conf.items():
-            if sk not in cur_conf:
+            if sk not in res:
                 res[sk] = sv
 
         return res

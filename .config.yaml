@@ -31,7 +31,11 @@ notify:
   # TG用户ID
   tg_user_id: null
   # push+ token: https://pushplus.hxtrip.com/
-  push_p_token: null
+  push_plus_token: null
+
+  # push+ group 一对多推送才需要次配置
+  push_plus_group: null
+
   # 依次填上corpid的值,corpsecret的值,touser的值,agentid,media_id的值，注意用,号隔开。
   qywx_am: null
 

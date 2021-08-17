@@ -16,6 +16,7 @@ from datetime import datetime
 
 from utils.logger import logger
 from utils.console import println
+from utils.browser import close_browser
 
 
 class JdJoyExchange(JdJoy):
@@ -142,13 +143,12 @@ class JdJoyExchange(JdJoy):
             self.message = '【活动名称】宠汪汪\n【京东账号】{}\n【兑换奖品】{}\n【兑换状态】成功\n【兑换时间】{}\n'.\
                 format(self.account, exchange_name, exchange_success_datetime)
 
-
     async def run(self):
         async with aiohttp.ClientSession(headers=self.headers, cookies=self.cookies,
                                          json_serialize=ujson.dumps) as session:
             await self.exchange_bean(session)
 
-        await self.close_browser()
+        await close_browser(self.browser)
 
 
 if __name__ == '__main__':

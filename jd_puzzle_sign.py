@@ -8,7 +8,7 @@
 import asyncio
 from utils.console import println
 from utils.jd_init import jd_init
-from utils.browser import open_browser, open_page
+from utils.browser import open_browser, open_page, close_browser
 from config import USER_AGENT
 from utils.validate import puzzle_validate_decorator
 
@@ -126,6 +126,16 @@ class JdPuzzleSign:
         name = '数码3C'
         await self.sign(browser, url, name)
 
+    async def electrical_appliance(self, browser):
+        """
+        京东电器签到
+        :param browser:
+        :return:
+        """
+        url = 'https://prodev.m.jd.com/mall/active/4SWjnZSCTHPYjE5T7j35rxxuMTb6/index.html'
+        name = '京东电器'
+        await self.sign(browser, url, name)
+
     async def run(self):
         """
         签到入口
@@ -161,8 +171,7 @@ class JdPuzzleSign:
         await self.personal_care_sign(browser)  # 个护馆
         await asyncio.sleep(1)
 
-        if browser:
-            await browser.close()
+        await close_browser(browser)
 
 
 if __name__ == '__main__':

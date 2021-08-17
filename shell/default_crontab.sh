@@ -5,7 +5,7 @@ SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 # 定时更新脚本
-40 4,14 * * * /bin/docker-entrypoint >> /dev/null  2>&1
+40 4,23 * * * /bin/docker-entrypoint >> /dev/null  2>&1
 
 #  检查cookies是否过期, 过期则发送通知
 0 */2 * * * /scripts/check_cookies.py >> /scripts/logs/check_cookies_`date "+\%Y-\%m-\%d"`.log 2>&1

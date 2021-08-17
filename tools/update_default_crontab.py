@@ -71,7 +71,10 @@ def get_exclude_scripts():
         with open(conf_path, 'r', encoding='utf-8-sig') as f:
             cfg = yaml.safe_load(f)
 
-        return cfg.get('crontab_exclude_scripts', [])
+        res = cfg.get('crontab_exclude_scripts', [])
+        if type(res) != list:
+            res = []
+        return res
     except Exception as e:
         print('读取配置文件:{}失败, {}'.format(conf_path, e.args))
         return dict()

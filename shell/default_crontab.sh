@@ -5,10 +5,13 @@ SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 # 定时更新脚本
-40 4,23 * * * /bin/docker-entrypoint >> /dev/null  2>&1
+40 4,14 * * * /bin/docker-entrypoint >> /dev/null  2>&1
 
 #  检查cookies是否过期, 过期则发送通知
 0 */2 * * * /scripts/check_cookies.py >> /scripts/logs/check_cookies_`date "+\%Y-\%m-\%d"`.log 2>&1
+
+#  清除日志脚本
+30 23 * * * /scripts/clean_log.py >> /scripts/logs/clean_log_`date "+\%Y-\%m-\%d"`.log 2>&1
 
 #  京东到家 签到赚鲜豆
 45 7,12,19 * * * /scripts/dj_bean.py >> /scripts/logs/dj_bean_`date "+\%Y-\%m-\%d"`.log 2>&1
@@ -72,9 +75,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 #  京东APP早起福利
 30 6 * * * /scripts/jd_good_morning.py >> /scripts/logs/jd_good_morning_`date "+\%Y-\%m-\%d"`.log 2>&1
-
-#  京东APP->首页->领京豆->抢京豆
-5 2,22 * * * /scripts/jd_grab_bean.py >> /scripts/logs/jd_grab_bean_`date "+\%Y-\%m-\%d"`.log 2>&1
 
 #  东东健康社区
 35 6,16 * * * /scripts/jd_health.py >> /scripts/logs/jd_health_`date "+\%Y-\%m-\%d"`.log 2>&1

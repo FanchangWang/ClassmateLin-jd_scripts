@@ -25,6 +25,7 @@ def get_script_list(dir_path=None):
         script_list.append(filename)
 
     script_list.append('check_cookies.py')
+    script_list.append('clean_log.py')
     script_list.sort()
 
     return script_list

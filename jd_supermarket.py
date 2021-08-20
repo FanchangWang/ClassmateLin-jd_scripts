@@ -3,6 +3,7 @@
 # @Time    : 2021/8/20 2:25 下午
 # @File    : jd_supermarket.py
 # @Project : jd_scripts
+# @Cron    : 7 7,20 * * *
 # @Desc    : 东东超市
 import asyncio
 import json

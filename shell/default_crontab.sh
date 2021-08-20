@@ -124,6 +124,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #  京东APP-每日特价-疯狂砸金蛋
 21 5,17 * * * /scripts/jd_smash_golden_egg.py >> /scripts/logs/jd_smash_golden_egg_`date "+\%Y-\%m-\%d"`.log 2>&1
 
+#  取消商品关注和店铺关注
+50 23 * * * /scripts/jd_unsubscribe.py >> /scripts/logs/jd_unsubscribe_`date "+\%Y-\%m-\%d"`.log 2>&1
+
 #  众筹许愿池,
 45 */12 * * * /scripts/jd_wishing_pool.py >> /scripts/logs/jd_wishing_pool_`date "+\%Y-\%m-\%d"`.log 2>&1
 

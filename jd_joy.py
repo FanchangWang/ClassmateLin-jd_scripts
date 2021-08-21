@@ -414,9 +414,9 @@ class JdJoy:
 
 
 if __name__ == '__main__':
-    from config import JD_COOKIES
-    app = JdJoy(**JD_COOKIES[0])
-    asyncio.run(app.run())
-    # from utils.process import process_start
-    # from config import JOY_PROCESS_NUM
-    # process_start(JdJoy, '宠汪汪做任务', process_num=JOY_PROCESS_NUM)
+    # from config import JD_COOKIES
+    # app = JdJoy(**JD_COOKIES[0])
+    # asyncio.run(app.run())
+    from utils.process import process_start
+    from config import JOY_PROCESS_NUM
+    process_start(JdJoy, '宠汪汪做任务', process_num=JOY_PROCESS_NUM)

@@ -11,7 +11,9 @@ RUN apt update -y \
     libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 \
     libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 \
     libxdamage1 libxss1 libxtst6 libappindicator1 libnss3 libasound2 \
-    libatk1.0-0 libc6 ca-certificates fonts-liberation lsb-release xdg-utils \
+    libatk1.0-0 libc6 ca-certificates fonts-liberation lsb-release xdg-utils chromium \
+    && rm -f /root/.local/share/pyppeteer/local-chromium/588429/chrome-linux/chrome \
+    && ln -s /usr/bin/chromium /root/.local/share/pyppeteer/local-chromium/588429/chrome-linux/chrome \
     && chsh -s /bin/bash \
     && echo Asia/Shanghai > /etc/timezone && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && export LC_ALL="C.UTF-8" \

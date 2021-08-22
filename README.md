@@ -19,7 +19,8 @@
 
 ### 使用docker
 
-- docker一键安装: `docker run -d --name jd classmatelin/hhl:latest`, docker-compose配置自行编写, 映射logs和conf目录即可。
+- docker一键安装: x86:  `docker run -d --name jd classmatelin/hhl:latest`, arm: `docker run -d --name jd classmatelin/hhl:arm64`
+- docker-compose配置自行编写, 映射logs和conf目录即可。
 
 ## 更新
 

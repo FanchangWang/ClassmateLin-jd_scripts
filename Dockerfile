@@ -13,6 +13,7 @@ RUN apt update -y \
     libxdamage1 libxss1 libxtst6 libappindicator1 libnss3 libasound2 \
     libatk1.0-0 libc6 ca-certificates fonts-liberation lsb-release xdg-utils chromium \
     && rm -f /root/.local/share/pyppeteer/local-chromium/588429/chrome-linux/chrome \
+    && mkdir -p /usr/bin/chromium /root/.local/share/pyppeteer/local-chromium/588429/chrome-linux/ \
     && ln -s /usr/bin/chromium /root/.local/share/pyppeteer/local-chromium/588429/chrome-linux/chrome \
     && chsh -s /bin/bash \
     && echo Asia/Shanghai > /etc/timezone && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \

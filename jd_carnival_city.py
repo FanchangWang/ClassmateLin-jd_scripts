@@ -3,7 +3,7 @@
 # @Time    : 2021/8/23 下午1:27
 # @Project : jd_scripts
 # @File    : jd_carnival_city.py
-# @Cron    :
+# @Cron    : 40 0 * * *
 # @Desc    : 京东APP手机狂欢城
 import asyncio
 import json

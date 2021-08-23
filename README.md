@@ -1,4 +1,4 @@
-# 简介
+﻿# 简介
 
 **[点击查看《提问的智慧》。](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)**
 
@@ -59,59 +59,19 @@
   - PUSH+: 一对一只需要配置push_plus_token, 一对多还需要配置push_plus_group
   - 企业微信应用消息：配置qywx_am  （依次填上corpid的值,corpsecret的值,touser的值,agentid,media_id的值，注意用,号隔开。）
 
-## 注意
-
-- 内部账号互相助力, 如有剩余助力作者。
-
-## 脚本列表
-
-
-| 脚本名称                  | 脚本描述            | 完成进度 |
-|:---:|:---:|:---:|
-| jd_big_winner.py      | 京东极速版->大赢家翻翻乐 | 100% |
-| jd_bean_change.py      | 资产变动通知 | 100% |
-| get_jd_cookies.py     | 获取京东的COOKIES    | 100%      |
-| jd_cute_pet.py        | 京东APP->东东萌宠     | 100%        |
-| jd_factory.py         | 京东APP->东东工厂     |  100%       |
-| jd_factory_collect.py         | 京东APP->东东工厂-收电量     |  100%       |
-| jd_farm.py            | 京东APP->东东农场     |  100%       |
-| jd_lucky_turntable.py| 幸运大转盘 | 100%  |
-| jd_joy.py | 京东APP-> 宠汪汪 | 90% |
-| jd_joy_exchange.py | 京东APP-> 宠汪汪 -> 兑换京豆| 100% |
-| jd_joy_feed.py | 京东APP-> 宠汪汪 -> 喂狗粮 | 100% |
-| jd_planting_bean.py | 京东APP->种豆得豆|  100% |
-| jd_planting_bean_collect.py | 京东APP->种豆得豆-收取营养液|  100% |
-| jd_ranking_list.py | 京东APP->排行榜 | 100% |
-| jd_shark_bean.py | 京东APP->摇京豆 | 100%|
-| jd_collar_bean.py | 京东APP->领京豆 | 99%|
-| jd_sign.py| 京东签到合集 | 100% |
-| jr_daily_task_goose.py| 京东金融->天天提鹅 | 100% |
-| jr_pet_pig.py | 京东金融->养猪猪| 100% |
-| jr_money_tree.py| 京东金融->摇钱树| 100%|
-| jd_bean_lottery.py | 京东APP->签到领京豆->摇京豆->京豆夺宝| 100% |
-| jd_earn_bean.py | 微信小程序-赚京豆 | 100% |
-| jd_cash.py | 京东APP-领现金 | 100% |
-| jd_burning_summer.py | 京东APP-燃动夏季| 100%(过期) |
-| jd_wishing_pool.py | 京东APP-京东众筹-许愿池| 100% |
-| jd_good_morning.py | 京东APP-领京豆->早起福利| 100% |
-| jd_bean_home.py | 京东APP-签到领豆->额外京豆/浏览商品| 100% |
-| jd_gold_creator.py | 京东APP-京东排行榜->金榜创造营| 100%|
-| dj_fruit.py | 京东APP-京东到家->领免费水果| 100%|
-| dj_fruit_collect.py | 京东APP-京东到家->领免费水果->点水车| 100%|
-| dj_bean.py | 京东APP-京东到家->签到/赚鲜豆| 100%|
-| dj_bean_manor.py| 京东APP-京东到家->鲜豆庄园任务| 90%|
-| dj_bean_manor_water.py| 京东APP-京东到家->鲜豆庄园->领水/浇水| 100%|
-| jd_flash_sale_box.py| 京东APP->品牌闪购->闪购盲盒|100%|
-| jd_amusement_post.py| 京东APP->京小鸽游乐寄| 100% |
-| jd_puzzle_sign.py | 京东需要拼图验证的签到 | 100%|
-| jd_health.py | 京东APP-东东健康社区 | 100%|
-| jx_factory.py | 京喜APP->京喜工厂 | 100% |
-| jx_factory_collect.py | 京喜APP->京喜工厂收电量 | 100% |
-
-
 ## 配置说明
 
 - 请查看/scripts/conf/config.yaml中的配置项。
+
+
+## 注意
+
+- 所有活动优先内部账号助力, 如有剩余助力次数，将会助力作者和助力池。
+- 助力码自动提交助力池。
+
+- 如果我的项目对你有帮助:
+
+![](./static/imgs/wechat.jpg?width=80)
 
 
 ## 特别声明: 
@@ -133,3 +93,101 @@
 **您必须在下载后的24小时内从计算机或手机中完全删除以上内容.**  </br>
 ***您使用或者复制了本仓库且本人制作的任何脚本，则视为`已接受`此声明，请仔细阅读*** 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 脚本列表
+
+- **脚本总数: 56**
+
+|脚本名称|脚本描述|
+|:---:|:---:|
+|batch_run.py| 批量运行当前目录下的所有以jd, jr, jx, dj开头的活动脚本。|
+|check_cookies.py| 检查cookies是否过期, 过期则发送通知|
+|clean_log.py| 清除日志, 默认保留三天, 可在配置中修改|
+|dj_bean.py| 京东APP->京东到家->签到->所有任务|
+|dj_bean_manor.py| 京东APP->京东到家->签到->鲜豆庄园|
+|dj_bean_manor_water.py| 京东APP->京东到家->签到->鲜豆庄园, 定时领水滴/浇水|
+|dj_fruit.py| 京东APP->京东到家->免费水果|
+|dj_fruit_collect.py| 京东APP->京东到家->免费水果, 定时领水滴/浇水|
+|get_jd_cookies.py| 京东APP扫码登录获取cookies|
+|jd_amusement_post.py| 京东APP->签到领豆->边玩边赚->京小鸽游乐寄|
+|jd_bean_change.py| 京豆红包变动通知|
+|jd_bean_home.py| 京东APP->我的->签到领京豆->领额外奖励|
+|jd_bean_indiana.py| 京豆APP首页->领京豆->摇京豆->左上角京豆夺宝|
+|jd_big_winner.py| 京东急速版APP->我的->发财大赢家|
+|jd_call_goods.py| 京东APP->我的->签到领豆->边玩边赚->来电好物季|
+|jd_carnival_city.py| 京东APP首页->手机->手机嗨购日->一亿京豆悬浮窗|
+|jd_cash.py| 京东APP->搜索领现金进入|
+|jd_collar_bean.py| 京东APP首页->领京豆->升级赚京豆|
+|jd_crazy_joy.py| 京东APP-签到领豆-疯狂的JOY|
+|jd_cute_pet.py| 京东APP->我的->东东萌宠|
+|jd_earn.py| 微信小程序->京东赚赚|
+|jd_earn_bean.py| 赚京豆(微信小程序)-赚京豆-签到领京豆|
+|jd_factory.py| 京东APP->京东电器->东东工厂|
+|jd_factory_collect.py| 京东APP->京东电器->东东工厂, 定时收电量|
+|jd_farm.py| 京东APP-我的->东东农场|
+|jd_flash_sale_box.py| 京东APP->品牌闪购->闪购盲盒|
+|jd_gold_creator.py| 京东APP->排行榜->金榜创造营|
+|jd_good_morning.py| 京东APP首页->领京豆->早起福利|
+|jd_health.py| 京东APP->我的->签到领豆->边玩边赚->东东健康社区|
+|jd_health_collect.py| 京东APP->我的->签到领豆->边玩边赚->东东健康社区, 定时收能量|
+|jd_joy.py| 京东APP->我的->宠汪汪|
+|jd_joy_exchange.py| 京东APP->我的->宠汪汪, 兑换京豆, 优先兑换500, 兑换失败则兑换20.|
+|jd_joy_feed.py| 京东APP->我的->宠汪汪, 定时喂狗|
+|jd_lottery_bean.py| 京东APP->签到领京豆->抽京豆|
+|jd_lucky_turntable.py| 幸运大转盘, 入口忘了在哪|
+|jd_planting_bean.py| 京东APP->我的->签到领豆->种豆得豆|
+|jd_planting_bean_collect.py| 京东APP->我的->签到领豆->种豆得豆, 定时收取营养液|
+|jd_puzzle_sign.py| 京东APP->拼图签到合集|
+|jd_ranking_list.py| 今日王牌, 入口忘了在哪。|
+|jd_school_charging.py| 京东APP->我的->签到领豆->边玩边赚->开学充电站|
+|jd_second_coin.py| 京东APP首页->京东秒杀->立即签到->赚秒秒币|
+|jd_shark_bean.py| 京东APP->我的->签到领豆->摇京豆|
+|jd_shop.py| 京东APP首页->领京豆->进店领豆|
+|jd_sign.py| 京东签到合集|
+|jd_smash_golden_egg.py| 京东APP-每日特价-疯狂砸金蛋|
+|jd_supermarket.py| 京东APP首页->京东超市->游戏|
+|jd_try.py| 京东APP->我的->更多工具->新品试用|
+|jd_unsubscribe.py| 取消商品关注和店铺关注|
+|jd_wishing_pool.py| 京东APP首页->京东众筹->众筹许愿池|
+|jr_daily_take_goose.py| 京东金融APP->天天提鹅|
+|jr_daily_take_goose_collect.py| 京东金融APP->天天提鹅， 定时收鹅蛋|
+|jr_money_tree.py| 京东APP->我的->摇钱树|
+|jr_money_tree_collect.py| 京东APP->我的->摇钱树|
+|jr_pet_pig.py| 京东金融APP->我的->养猪猪|
+|jx_factory.py| 京喜App->我的->京喜工厂|
+|jx_factory_collect.py| 京喜App->我的->京喜工厂, 定时收电量|

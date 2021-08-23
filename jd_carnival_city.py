@@ -3,7 +3,7 @@
 # @Time    : 2021/8/23 下午1:27
 # @Project : jd_scripts
 # @File    : jd_carnival_city.py
-# @Cron    : 40 0 * * *
+# @Cron    : 1 1 * * *
 # @Desc    : 京东APP手机狂欢城
 import asyncio
 import json
@@ -28,6 +28,7 @@ class JdCarnivalCity:
         'referer': 'https://carnivalcity.m.jd.com/'
     }
 
+    @logger.catch
     async def request(self, session, function_id, body=None, method='POST'):
         """
         请求数据
@@ -63,6 +64,7 @@ class JdCarnivalCity:
                 'code': -9999
             }
 
+    @logger.catch
     async def do_browse_task(self, session, body, brand_id=''):
         """
         做任务
@@ -83,6 +85,7 @@ class JdCarnivalCity:
                 "apiMapping": "/khc/task/getBrowsePrize"}
         await self.request(session, 'carnivalcity_jd_prod', body)
 
+    @logger.catch
     async def do_host_product_tasks(self, session, task_list):
         """
         做热销产品任务
@@ -97,6 +100,7 @@ class JdCarnivalCity:
                     "apiMapping": "/khc/task/doBrowse"}
             await self.do_browse_task(session, body)
 
+    @logger.catch
     async def get_brand_info(self, session, brand_id):
         """
         获取品牌明细
@@ -108,6 +112,7 @@ class JdCarnivalCity:
         res = await self.request(session, 'carnivalcity_jd_prod', body)
         return res.get('data', dict())
 
+    @logger.catch
     async def do_brand_sku_tasks(self, session, brand_id, task_list):
         """
         做品牌任务的sku任务
@@ -121,6 +126,7 @@ class JdCarnivalCity:
                     "logMark": "browseSku", "apiMapping": "/khc/task/doBrowse"}
             await self.do_browse_task(session, body, brand_id=brand_id)
 
+    @logger.catch
     async def do_brand_meeting_tasks(self, session, brand_id, task_list):
         """
         品牌任务下的会场任务
@@ -134,6 +140,7 @@ class JdCarnivalCity:
                     "logMark": "browseVenue", "apiMapping": "/khc/task/doBrowse"}
             await self.do_browse_task(session, body, brand_id=brand_id)
 
+    @logger.catch
     async def do_brand_task(self, session, task_list):
         """
         做品牌任务
@@ -167,6 +174,7 @@ class JdCarnivalCity:
             await self.request(session, 'carnivalcity_jd_prod', body)
             await asyncio.sleep(1)
 
+    @logger.catch
     async def do_browse_shop_task(self, session, task_list):
         """
         逛好货街任务
@@ -181,6 +189,7 @@ class JdCarnivalCity:
                     "logMark": "secondBlock", "apiMapping": "/khc/task/doBrowse"}
             await self.do_browse_task(session, body)
 
+    @logger.catch
     async def do_tasks(self, session):
         """
         做任务
@@ -202,6 +211,7 @@ class JdCarnivalCity:
         await self.do_brand_task(session, brand_list)
         await self.do_browse_shop_task(session, browse_shop_list)
 
+    @logger.catch
     async def get_share_code(self, session):
         """
         获取助力码
@@ -216,6 +226,7 @@ class JdCarnivalCity:
         Code.insert_code(code_key=CODE_JD_CARNIVAL_CITY, code_val=share_code, sort=self.sort, account=self.account)
         println('{}, 助力码:{}'.format(self.account, share_code))
 
+    @logger.catch
     async def lottery(self, session):
         """
         抽奖
@@ -231,6 +242,7 @@ class JdCarnivalCity:
             println('{}, 抽奖结果:{}'.format(self.account, res.get('data', dict()).get('prizeName', '未知')))
             await asyncio.sleep(1)
 
+    @logger.catch
     async def run(self):
         """
         :return:
@@ -240,6 +252,7 @@ class JdCarnivalCity:
             await self.do_tasks(session)
             await self.lottery(session)
 
+    @logger.catch
     async def run_help(self):
         """
         助力好友

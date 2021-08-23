@@ -9,6 +9,23 @@ if [ -z $REPO_URL ]; then
   REPO_URL=https://github.com/ClassmateLin/jd_scripts.git
 fi
 
+if ! type ps >/dev/null 2>&1; then
+  echo "正在安装procps..."
+  apt install procps
+  apt clean;
+else
+    echo 'procps 已安装';
+fi
+
+if ! type chromium >/dev/null 2>&1; then
+    echo '开始安装chromium...';
+    apt -y install chromium;
+    apt clean;
+    rm -f /root/.local/share/pyppeteer;
+else
+    echo 'chromium 已安装';
+fi
+
 if [ ! -d $CODE_DIR/.git ]; then
   echo "代码目录为空, 开始clone代码..."
   cd $CODE_DIR;

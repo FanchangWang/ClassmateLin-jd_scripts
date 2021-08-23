@@ -56,6 +56,9 @@ CODE_JX_FACTORY_WORK = 'jx_factory_work'
 #  到家果园助力
 CODE_DJ_FRUIT = 'dj_fruit'
 
+# 手机狂欢城
+CODE_JD_CARNIVAL_CITY = 'jd_carnival_city'
+
 
 CODE_TITLE_MAP = {
     CODE_AMUSEMENT_POST: '京小鸽游乐寄-助力码',

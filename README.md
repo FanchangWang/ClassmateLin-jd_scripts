@@ -19,13 +19,11 @@
 
 ### 使用docker
 
-- docker一键安装: x86:  `docker run -d --name jd classmatelin/hhl:latest`, arm: `docker run -d --name jd classmatelin/hhl-n1:latest`。`
+- docker一键安装: 
+  - x86:  `docker run -d --name jd classmatelin/hhl:latest`,
+  - arm: `docker run -d --name jd classmatelin/hhl-n1:latest`。`
 - docker-compose配置自行编写, 映射logs和conf目录即可。
 
-n1如法运行宠汪汪, 需要在容器内部执行以下下命令。
-```
-apt install chromium && rm -f /root/.local/share/pyppeteer/local-chromium/588429/chrome-linux/chrome && ln -s /usr/bin/chromium /root/.local/share/pyppeteer/local-chromium/588429/chrome-linux/chrome
-```
 
 ## 更新
 

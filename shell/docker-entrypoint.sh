@@ -14,12 +14,12 @@ if ! type ps >/dev/null 2>&1; then
   apt -y install procps
   apt clean;
 else
-    echo 'procps 已安装';
+    echo "procps 已安装";
 fi
 
 if ! type node >/dev/null 2>&1; then
-  echo "正在安装nodejs..."
-  apt -t install nodejs npm
+  echo "正在安装nodejs...";
+  apt -t install nodejs npm;
   apt clean;
 else
     echo "nodejs 已安装";
@@ -81,10 +81,15 @@ python $CODE_DIR/tools/update_config.py;
 python $CODE_DIR/tools/update_default_crontab.py;
 cat $CODE_DIR/shell/default_crontab.sh > /tmp/crontab;
 echo -e "\n" >> /tmp/crontab;
+
 cat $CODE_DIR/conf/crontab.sh >> /tmp/crontab;
+
 crontab /tmp/crontab;
+
 rm /tmp/crontab;
+
 echo "重启cron进程...";
+
 /etc/init.d/cron restart;
 
 rm -rf $CODE_DIR/sqlite.db;

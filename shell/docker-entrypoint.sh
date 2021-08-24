@@ -9,6 +9,16 @@ if [ -z $REPO_URL ]; then
   REPO_URL=https://github.com/ClassmateLin/jd_scripts.git
 fi
 
+if [ ! -d $CODE_DIR/.git ]; then
+  echo "代码目录为空, 开始clone代码...";
+  cd $CODE_DIR;
+  git init;
+  git branch -M master;
+  git remote add origin $REPO_URL;
+  git pull origin master;
+  git branch --set-upstream-to=origin/master master;
+fi
+
 if ! type ps >/dev/null 2>&1; then
   echo "正在安装procps..."
   apt -y install procps
@@ -34,16 +44,6 @@ else
     echo 'chromium 已安装';
 fi
 
-if [ ! -d $CODE_DIR/.git ]; then
-  echo "代码目录为空, 开始clone代码...";
-  cd $CODE_DIR;
-  git init;
-  git branch -M master;
-  git remote add origin $REPO_URL;
-  git pull origin master;
-  git branch --set-upstream-to=origin/master master;
-fi
-
 if [ ! -d $CODE_DIR/conf ]; then
   echo "配置文件目录不存在, 创建目录...";
   mkdir -p $CODE_DIR/conf;
@@ -58,6 +58,7 @@ if [ ! -f "$CODE_DIR/conf/config.yaml" ]; then
   echo "脚本配置文件不存在, 复制配置文件...";
   cp $CODE_DIR/.config.yaml $CODE_DIR/conf/config.yaml;
 fi
+
 
 
 if [ ! -f "$CODE_DIR/conf/crontab.sh" ]; then

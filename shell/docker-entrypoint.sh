@@ -19,7 +19,7 @@ fi
 
 if ! type node >/dev/null 2>&1; then
   echo "正在安装nodejs...";
-  apt -t install nodejs npm;
+  apt -y install nodejs;
   apt clean;
 else
     echo "nodejs 已安装";

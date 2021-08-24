@@ -11,10 +11,18 @@ fi
 
 if ! type ps >/dev/null 2>&1; then
   echo "正在安装procps..."
-  apt install procps
+  apt -y install procps
   apt clean;
 else
     echo 'procps 已安装';
+fi
+
+if ! type node >/dev/null 2>&1; then
+  echo "正在安装nodejs..."
+  apt -t install nodejs npm
+  apt clean;
+else
+    echo 'nodejs 已安装';
 fi
 
 if ! type chromium >/dev/null 2>&1; then

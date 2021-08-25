@@ -133,9 +133,13 @@
 
 
 
+
+
+
+
 ## 脚本列表
 
-- **脚本总数: 59**
+- **脚本总数: 61**
 
 |脚本名称|脚本描述|
 |:---:|:---:|
@@ -148,6 +152,8 @@
 |dj_fruit.py| 京东APP->京东到家->免费水果|
 |dj_fruit_collect.py| 京东APP->京东到家->免费水果, 定时领水滴/浇水|
 |get_jd_cookies.py| 京东APP扫码登录获取cookies|
+|jd_5g_box.py| 京东APP->营业厅->领京豆, 5G盲盒做任务抽奖|
+|jd_5g_box_collect.py|  京东APP->营业厅->领京豆, 5G盲盒每3小时收取信号值|
 |jd_amusement_post.py| 京东APP->签到领豆->边玩边赚->京小鸽游乐寄|
 |jd_bean_change.py| 京豆红包变动通知|
 |jd_bean_home.py| 京东APP->我的->签到领京豆->领额外奖励|
@@ -192,7 +198,7 @@
 |jr_daily_take_goose.py| 京东金融APP->天天提鹅|
 |jr_daily_take_goose_collect.py| 京东金融APP->天天提鹅， 定时收鹅蛋|
 |jr_money_tree.py| 京东APP->我的->摇钱树|
-|jr_money_tree_collect.py| 京东APP->我的->摇钱树|
+|jr_money_tree_collect.py| 京东APP->我的->摇钱树, 定时收金果|
 |jr_pet_pig.py| 京东金融APP->我的->养猪猪|
 |jx_factory.py| 京喜App->我的->京喜工厂|
 |jx_factory_collect.py| 京喜App->我的->京喜工厂, 定时收电量|

@@ -62,8 +62,12 @@ CODE_JD_CARNIVAL_CITY = 'jd_carnival_city'
 # 京喜牧场
 CODE_JX_PASTURE = 'jd_pasture'
 
-
+# 特务Z
 CODE_JD_SUPER_BRAND = 'jd_super_brand'
+
+# 5G盲盒助力码
+CODE_5G_BOX = 'jd_5g_box'
+
 
 class Code(Model):
     """

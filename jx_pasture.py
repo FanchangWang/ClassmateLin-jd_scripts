@@ -190,7 +190,7 @@ class JxPasture:
             self.food_num = home_data.get('materialinfo', list())[0]['value']
         except Exception as e:
             println('{}, 活动未开启!'.format(self.account, e.args))
-            await self.do_newcomer_task(session)
+            await self.do_newcomer_task(session, cur_task_step)
 
         return True
 
@@ -485,8 +485,6 @@ class JxPasture:
             if not await self.init(session):
                 println('{}, 无法初始化, 退出程序!'.format(self.account))
                 return
-
-
 
             if self.share_code:
                 println('{}, 助力码:{}'.format(self.account, self.share_code))

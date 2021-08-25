@@ -190,7 +190,7 @@ class JxPasture:
             self.food_num = home_data.get('materialinfo', list())[0]['value']
         except Exception as e:
             println('{}, 活动未开启!'.format(self.account, e.args))
-            await self.do_newcomer_task(session, cur_task_step)
+            await self.do_newcomer_task(session)
 
         return True
 
@@ -458,7 +458,7 @@ class JxPasture:
         if res.get('ret') == 0:
             println('{}, 成功领取白菜!'.format(self.account))
 
-    async def do_newcomer_task(self, session, cur_step):
+    async def do_newcomer_task(self, session, cur_step='A-1'):
         """
         :return:
         """

@@ -131,9 +131,11 @@
 
 
 
+
+
 ## 脚本列表
 
-- **脚本总数: 58**
+- **脚本总数: 59**
 
 |脚本名称|脚本描述|
 |:---:|:---:|
@@ -182,6 +184,7 @@
 |jd_shop.py| 京东APP首页->领京豆->进店领豆|
 |jd_sign.py| 京东签到合集|
 |jd_smash_golden_egg.py| 京东APP-每日特价-疯狂砸金蛋|
+|jd_super_brand.py| 特务Z|
 |jd_supermarket.py| 京东APP首页->京东超市->游戏|
 |jd_try.py| 京东APP->我的->更多工具->新品试用|
 |jd_unsubscribe.py| 取消商品关注和店铺关注|

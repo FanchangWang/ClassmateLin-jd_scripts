@@ -63,6 +63,8 @@ CODE_JD_CARNIVAL_CITY = 'jd_carnival_city'
 CODE_JX_PASTURE = 'jd_pasture'
 
 
+CODE_JD_SUPER_BRAND = 'jd_super_brand'
+
 class Code(Model):
     """
     邀请/助力码

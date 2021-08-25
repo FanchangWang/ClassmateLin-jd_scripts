@@ -52,6 +52,7 @@ class Config:
         'jd_try_goods_count': '京东试用商品提供商品最大数量, 商品提供量多的是辣鸡商品',
         'jd_try_filter_keywords': '京东试用商品过滤关键词, 用@分隔',
         'chrome_path': 'chromium路径, 默认不需要修改，除非你是本地运行或者进行开发。',
+        'joy_feed_count': '宠汪汪喂食狗粮克数',
     }
 
     def __init__(self):

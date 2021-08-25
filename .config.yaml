@@ -11,6 +11,9 @@ process_num: 4
 # 宠汪汪进程数
 joy_process_num: 1
 
+# 宠汪汪喂食狗粮克数
+joy_feed_count: 20
+
 # 拼图签到进程数
 jd_puzzle_process_num: 1
 

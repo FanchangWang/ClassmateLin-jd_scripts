@@ -13,7 +13,10 @@ from urllib.parse import urlencode
 from utils.console import println
 from utils.jd_init import jd_init
 from utils.process import get_code_list
-from db.model import Code, CODE_JD_GRAB_BEAN
+from db.model import Code
+
+# 抢京豆
+CODE_JD_GRAB_BEAN = 'jd_grab_bean'
 
 
 @jd_init

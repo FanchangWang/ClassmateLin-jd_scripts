@@ -29,3 +29,4 @@ class JdCallGoods(JdCommon):
 if __name__ == '__main__':
     from utils.process import process_start
     process_start(JdCallGoods, '来电好物季', code_key=CODE_KEY)
+

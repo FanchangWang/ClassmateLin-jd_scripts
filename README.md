@@ -139,9 +139,11 @@
 
 
 
+
+
 ## 脚本列表
 
-- **脚本总数: 61**
+- **脚本总数: 62**
 
 |脚本名称|脚本描述|
 |:---:|:---:|
@@ -164,6 +166,7 @@
 |jd_carnival_city.py| 京东APP首页->手机->手机嗨购日->一亿京豆悬浮窗|
 |jd_cash.py| 京东APP->搜索领现金进入|
 |jd_collar_bean.py| 京东APP首页->领京豆->升级赚京豆|
+|jd_cool_summer.py| 清凉一夏|
 |jd_crazy_joy.py| 京东APP-签到领豆-疯狂的JOY|
 |jd_cute_pet.py| 京东APP->我的->东东萌宠|
 |jd_earn.py| 微信小程序->京东赚赚|

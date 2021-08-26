@@ -55,6 +55,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #  京东APP首页->领京豆->升级赚京豆
 6 1 * * * /scripts/jd_collar_bean.py >> /scripts/logs/jd_collar_bean_`date "+\%Y-\%m-\%d"`.log 2>&1
 
+#  清凉一夏
+8 8 * * * /scripts/jd_cool_summer.py >> /scripts/logs/jd_cool_summer_`date "+\%Y-\%m-\%d"`.log 2>&1
+
 #  京东APP->我的->东东萌宠
 35 6-18/6 * * * /scripts/jd_cute_pet.py >> /scripts/logs/jd_cute_pet_`date "+\%Y-\%m-\%d"`.log 2>&1
 

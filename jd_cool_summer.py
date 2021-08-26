@@ -3,7 +3,8 @@
 # @Time    : 2021/8/26 11:18 上午
 # @File    : jd_cool_summer.py
 # @Project : jd_scripts
-# @Desc    :
+# @Cron    : 8 8 * * *
+# @Desc    : 清凉一夏
 
 import asyncio
 import json

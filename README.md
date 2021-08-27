@@ -141,6 +141,10 @@
 
 
 
+
+
+
+
 ## 脚本列表
 
 - **脚本总数: 62**
@@ -193,13 +197,13 @@
 |jd_shark_bean.py| 京东APP->我的->签到领豆->摇京豆|
 |jd_shop.py| 京东APP首页->领京豆->进店领豆|
 |jd_sign.py| 京东签到合集|
-|jd_small_magic_cube.py| 京东小魔方|
 |jd_smash_golden_egg.py| 京东APP-每日特价-疯狂砸金蛋|
 |jd_super_brand.py| 特务Z|
 |jd_supermarket.py| 京东APP首页->京东超市->游戏|
 |jd_try.py| 京东APP->我的->更多工具->新品试用|
 |jd_unsubscribe.py| 取消商品关注和店铺关注|
 |jd_wishing_pool.py| 京东APP首页->京东众筹->众筹许愿池|
+|jd_women_box.py| 女装盲盒|
 |jr_daily_take_goose.py| 京东金融APP->天天提鹅|
 |jr_daily_take_goose_collect.py| 京东金融APP->天天提鹅， 定时收鹅蛋|
 |jr_money_tree.py| 京东APP->我的->摇钱树|

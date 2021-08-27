@@ -145,6 +145,8 @@
 
 
 
+
+
 ## 脚本列表
 
 - **脚本总数: 62**
@@ -167,7 +169,6 @@
 |jd_bean_home.py| 京东APP->我的->签到领京豆->领额外奖励|
 |jd_bean_indiana.py| 京豆APP首页->领京豆->摇京豆->左上角京豆夺宝|
 |jd_big_winner.py| 京东急速版APP->我的->发财大赢家|
-|jd_carnival_city.py| 京东APP首页->手机->手机嗨购日->一亿京豆悬浮窗|
 |jd_cash.py| 京东APP->搜索领现金进入|
 |jd_collar_bean.py| 京东APP首页->领京豆->升级赚京豆|
 |jd_cool_summer.py| 清凉一夏|
@@ -204,6 +205,7 @@
 |jd_unsubscribe.py| 取消商品关注和店铺关注|
 |jd_wishing_pool.py| 京东APP首页->京东众筹->众筹许愿池|
 |jd_women_box.py| 女装盲盒|
+|jd_wonderful_lottery.py| 京东APP->签到领豆->边玩边赚->每日抽奖|
 |jr_daily_take_goose.py| 京东金融APP->天天提鹅|
 |jr_daily_take_goose_collect.py| 京东金融APP->天天提鹅， 定时收鹅蛋|
 |jr_money_tree.py| 京东APP->我的->摇钱树|

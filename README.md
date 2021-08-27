@@ -147,9 +147,13 @@
 
 
 
+
+
+
+
 ## 脚本列表
 
-- **脚本总数: 62**
+- **脚本总数: 64**
 
 |脚本名称|脚本描述|
 |:---:|:---:|
@@ -191,6 +195,7 @@
 |jd_lucky_turntable.py| 幸运大转盘, 入口忘了在哪|
 |jd_planting_bean.py| 京东APP->我的->签到领豆->种豆得豆|
 |jd_planting_bean_collect.py| 京东APP->我的->签到领豆->种豆得豆, 定时收取营养液|
+|jd_polite.py| 小鸽有礼|
 |jd_puzzle_sign.py| 京东APP->拼图签到合集|
 |jd_ranking_list.py| 今日王牌, 入口忘了在哪。|
 |jd_school_charging.py| 京东APP->我的->签到领豆->边玩边赚->开学充电站|
@@ -215,3 +220,4 @@
 |jx_factory_collect.py| 京喜App->我的->京喜工厂, 定时收电量|
 |jx_pasture.py| 京喜APP->京喜牧场->日常任务|
 |jx_pasture_collect.py| 京喜APP->京喜牧场->定时收金币/割草/投喂小鸡|
+|jx_sign.py| 京喜APP->首页->签到领红包|

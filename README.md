@@ -153,9 +153,11 @@
 
 
 
+
+
 ## 脚本列表
 
-- **脚本总数: 64**
+- **脚本总数: 65**
 
 |脚本名称|脚本描述|
 |:---:|:---:|
@@ -193,6 +195,7 @@
 |jd_joy.py| 京东APP->我的->宠汪汪|
 |jd_joy_exchange.py| 京东APP->我的->宠汪汪, 兑换京豆, 优先兑换500, 兑换失败则兑换20.|
 |jd_joy_feed.py| 京东APP->我的->宠汪汪, 定时喂狗|
+|jd_koi_red_packet.py| 京东APP-签到领豆-边玩边赚-玩锦鲤红包|
 |jd_lottery_bean.py| 京东APP->签到领京豆->抽京豆|
 |jd_lucky_turntable.py| 幸运大转盘, 入口忘了在哪|
 |jd_planting_bean.py| 京东APP->我的->签到领豆->种豆得豆|

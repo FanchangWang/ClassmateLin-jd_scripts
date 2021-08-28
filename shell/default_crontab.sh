@@ -46,9 +46,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #  京东急速版APP->我的->发财大赢家
 3 */1 * * * /scripts/jd_big_winner.py >> /scripts/logs/jd_big_winner_`date "+\%Y-\%m-\%d"`.log 2>&1
 
-#  京东APP首页->手机->手机嗨购日->一亿京豆悬浮窗
-1 1 * * * /scripts/jd_carnival_city.py >> /scripts/logs/jd_carnival_city_`date "+\%Y-\%m-\%d"`.log 2>&1
-
 #  京东APP->搜索领现金进入
 46 */12 * * * /scripts/jd_cash.py >> /scripts/logs/jd_cash_`date "+\%Y-\%m-\%d"`.log 2>&1
 
@@ -100,6 +97,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #  京东APP->我的->宠汪汪, 定时喂狗
 10 */3 * * * /scripts/jd_joy_feed.py >> /scripts/logs/jd_joy_feed_`date "+\%Y-\%m-\%d"`.log 2>&1
 
+#  京东APP-签到领豆-边玩边赚-玩锦鲤红包
+40 0,22 * * * /scripts/jd_koi_red_packet.py >> /scripts/logs/jd_koi_red_packet_`date "+\%Y-\%m-\%d"`.log 2>&1
+
 #  京东APP->签到领京豆->抽京豆
 6 0 * * * /scripts/jd_lottery_bean.py >> /scripts/logs/jd_lottery_bean_`date "+\%Y-\%m-\%d"`.log 2>&1
 
@@ -111,6 +111,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 #  京东APP->我的->签到领豆->种豆得豆, 定时收取营养液
 40 */2 * * * /scripts/jd_planting_bean_collect.py >> /scripts/logs/jd_planting_bean_collect_`date "+\%Y-\%m-\%d"`.log 2>&1
+
+#  小鸽有礼
+9 16 * * * /scripts/jd_polite.py >> /scripts/logs/jd_polite_`date "+\%Y-\%m-\%d"`.log 2>&1
 
 #  京东APP->拼图签到合集
 47 10,4 * * * /scripts/jd_puzzle_sign.py >> /scripts/logs/jd_puzzle_sign_`date "+\%Y-\%m-\%d"`.log 2>&1
@@ -133,9 +136,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 #  京东签到合集
 0 3,19 * * * /scripts/jd_sign.py >> /scripts/logs/jd_sign_`date "+\%Y-\%m-\%d"`.log 2>&1
 
-#  京东小魔方
-36 0 * * * /scripts/jd_small_magic_cube.py >> /scripts/logs/jd_small_magic_cube_`date "+\%Y-\%m-\%d"`.log 2>&1
-
 #  京东APP-每日特价-疯狂砸金蛋
 21 5,17 * * * /scripts/jd_smash_golden_egg.py >> /scripts/logs/jd_smash_golden_egg_`date "+\%Y-\%m-\%d"`.log 2>&1
 
@@ -153,6 +153,12 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 #  京东APP首页->京东众筹->众筹许愿池
 45 */12 * * * /scripts/jd_wishing_pool.py >> /scripts/logs/jd_wishing_pool_`date "+\%Y-\%m-\%d"`.log 2>&1
+
+#  女装盲盒
+5 1 * * * /scripts/jd_women_box.py >> /scripts/logs/jd_women_box_`date "+\%Y-\%m-\%d"`.log 2>&1
+
+#  京东APP->签到领豆->边玩边赚->每日抽奖
+44 4,5 * * * /scripts/jd_wonderful_lottery.py >> /scripts/logs/jd_wonderful_lottery_`date "+\%Y-\%m-\%d"`.log 2>&1
 
 #  京东金融APP->天天提鹅
 35 9,22 * * * /scripts/jr_daily_take_goose.py >> /scripts/logs/jr_daily_take_goose_`date "+\%Y-\%m-\%d"`.log 2>&1

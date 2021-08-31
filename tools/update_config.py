@@ -53,6 +53,7 @@ class Config:
         'jd_try_filter_keywords': '京东试用商品过滤关键词, 用@分隔',
         'chrome_path': 'chromium路径, 默认不需要修改，除非你是本地运行或者进行开发。',
         'joy_feed_count': '宠汪汪喂食狗粮克数',
+        'server_send_key': 'server酱通知key'
     }
 
     def __init__(self):

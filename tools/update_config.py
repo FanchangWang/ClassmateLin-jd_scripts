@@ -35,7 +35,7 @@ class Config:
         'log_days': '日志保留天数, 默认3天',
         'process_num': '脚本默认开启进程数量',
         'joy_process_num': '宠汪汪脚本开启进程数',
-        'jd_cookies': '京东cookies, 包含pt_key=xx;pt_pin=xx;即可, 中间不能有空格, 分号不能少。如需给cookie添加备注, 可在其后面添加: `remark=账号1;`, 例如:`pt_pin=jd_78b;pt_key=AAJgyqEMOsFQr5a0ucVzJepxU;remarl=账号1;`',
+        'jd_cookies': '京东cookies, 包含pt_key=xx;pt_pin=xx;即可, 中间不能有空格, 分号不能少。如需给cookie添加备注, 可在其后面添加: `remark=账号1;`, 例如:`pt_pin=jd_78b;pt_key=AAJgyqEMOxU;remark=账号1;`',
         'jd_farm_bean_card': '东东农场是否使用水滴换豆卡, 100水滴可以换20京豆, 默认不兑换',
         'jd_farm_retain_water': '东东农场每天保留多少水滴, 用于明天的十次浇水任务',
         'notify': '消息通知配置项, TG机器人通知需要宿主机有qiang。',

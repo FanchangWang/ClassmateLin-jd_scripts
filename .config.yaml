@@ -33,6 +33,8 @@ notify:
   tg_bot_token: null
   # TG用户ID
   tg_user_id: null
+  # TG方向代理
+  tg_bot_api: null
   # push+ token: https://pushplus.hxtrip.com/
   push_plus_token: null
 

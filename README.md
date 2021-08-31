@@ -46,7 +46,9 @@
     # JD_COOKIES配置, 一行一个, -符号是必须的。
     jd_cookies: 
       - pt_pin=jd_78b;pt_key=AAJgyqEMOsFQr5a0ucVzJepxU;
-    
+      
+      # 如需给cookie添加备注, 可在其后面添加: `remark=账号1;`, 例如:`pt_pin=jd_78b;pt_key=AAJgyqEMOsFQr5a0ucVzJepxU;remarl=账号1;`
+      - pt_pin=jd_78b;pt_key=AAJgyqEMOsFQr5a0ucVzJepxU;remarl=账号1;
     # 此处省略更多配置
     ```
 

@@ -61,6 +61,7 @@
   - TG机器人: 配置tg_bot_token和tg_user_id
   - PUSH+: 一对一只需要配置push_plus_token, 一对多还需要配置push_plus_group
   - 企业微信应用消息：配置qywx_am  （依次填上corpid的值,corpsecret的值,touser的值,agentid,media_id的值，注意用,号隔开。）
+  - server酱: 配置server_send_key
 
 ## 配置说明
 

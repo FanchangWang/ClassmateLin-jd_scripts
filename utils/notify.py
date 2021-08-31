@@ -8,7 +8,7 @@ import requests
 import telegram
 import os, re
 import json
-from config import TG_BOT_TOKEN, TG_USER_ID, PUSH_PLUS_TOKEN, PUSH_PLUS_GROUP, QYWX_AM,SERVER_SEND_KEY
+from config import TG_BOT_TOKEN, TG_USER_ID, PUSH_PLUS_TOKEN, PUSH_PLUS_GROUP, QYWX_AM, SERVER_SEND_KEY
 from utils.console import println
 
 
@@ -164,7 +164,8 @@ def notify(title, content):
     wecom_app(title, content)
     # TG通知
     tg_bot_notify(title, content)
-    push_server(title, content)
+    push_server(title.replace("\n", ""), content.replace("\n", "\n\n"))
+
 
 def push_server(title, content):
     if not SERVER_SEND_KEY:

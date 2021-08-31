@@ -33,6 +33,8 @@ notify:
   tg_bot_token: null
   # TG用户ID
   tg_user_id: null
+  # TG代理
+  tg_bot_api: null
   # push+ token: https://pushplus.hxtrip.com/
   push_plus_token: null
 
@@ -41,6 +43,8 @@ notify:
 
   # 依次填上corpid的值,corpsecret的值,touser的值,agentid,media_id的值，注意用,号隔开。
   qywx_am: null
+
+  #  server酱通知key
   server_send_key: null
 # 在此列表中的脚本, 将不会加入到定时任务中, 如需立即生效, 请手动执行命令: docker-entrypoint
 crontab_exclude_scripts:
